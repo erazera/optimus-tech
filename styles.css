@@ -1,0 +1,21 @@
+
+@import url("styles/header.css");
+
+
+:root{
+    --background-color: white;
+    --dark-grey: #3A404E;
+    --light-grey: #667085;
+    --red: #8E2424;
+    --white: white;
+    --principal-font: "Inter";
+}
+
+.body{
+    background-color: var(--background-color);
+    font-size: 16px;
+    font-family: var(--principal-font);
+    font-weight: 400
+    ;
+}
+
