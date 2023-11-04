@@ -1,0 +1,29 @@
+.metrics__list{
+    display: flex;
+    padding: 0 3em;
+    gap: 3em;
+}
+
+.list__item{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    gap: 0.5em;
+    text-align: center;
+}
+
+.list__item-numbers{
+    color: var(--red);
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.list__item-title{
+    color: var(--dark-blue);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.list__item-text{
+    color: var(--light-grey);
+}
