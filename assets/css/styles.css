@@ -1,5 +1,7 @@
 
 @import url("header.css");
+@import url("article.css");
+@import url("metrics.css");
 
 
 
@@ -10,12 +12,13 @@
     --red: #8E2424;
     --white: white;
     --principal-font: "Inter";
+    --dark-blue: #101828;
 }
 
-.body{
+body{
     background-color: var(--background-color);
-    font-size: 16px;
     font-family: var(--principal-font);
+    font-size: 16px;
     font-weight: 400
     ;
 }
