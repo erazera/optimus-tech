@@ -1,0 +1,94 @@
+.jobs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+}
+
+.jobs__ad{
+    background: #F5E6E4;
+    color: var(--red);
+    font-size: 14px;
+    border-radius: 24px;
+    padding: 0.5em;
+    margin: 1em;
+}
+
+.jobs__title{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+.jobs__text{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--light-grey);
+    margin: 1em;
+}
+
+.job__offers{
+    display: flex;
+    margin: 4em 13vw 3em 13vw;
+}
+
+
+.job__title{
+    font-size: 20px;
+    color: var(--dark-blue);
+    font-weight: 500;
+    align-items: center;
+
+}
+
+.job__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list__option{
+    margin: 2em;
+    padding: 1em;
+    border: 1px solid var(--light-grey);
+    border-radius: 12px;
+    width: 30vw;
+    flex-direction: column;
+    
+}
+
+.list__option-title{
+    padding-bottom: 1em;
+    font-size: 18px;
+    color: var(--dark-blue);
+    font-weight: 500;
+}
+
+.list__description{
+    display: inline-flex;
+    margin-right: 1em;
+    font: 16px;
+    font-weight: 500;
+    color: var(--light-grey);
+}
+
+@media screen and (max-width: 768px) {
+    .jobs{
+        text-align: center;
+        padding-top: 0;
+    }
+    
+   .jobs__image{
+    width: 90vw;
+   }
+
+
+   .job__offers{
+    flex-direction: column;
+    margin-top: 0;
+   }
+
+   .list__option{
+    width: 40vw;
+   }
+}

@@ -2,6 +2,7 @@
 @import url("header.css");
 @import url("article.css");
 @import url("metrics.css");
+@import url("jobs.css");
 
 
 
@@ -13,6 +14,7 @@
     --white: white;
     --principal-font: "Inter";
     --dark-blue: #101828;
+    --superlight-grey: #F5E6E4;
 }
 
 body{

@@ -93,20 +93,20 @@ ul {
     
     }
     
-
     .container__list{
         flex-direction: column;
         align-items: center;
         position: absolute;
         top: 100%;
         left: 0%;
-        width: 60vw;
+        width: 50vw;
         text-decoration: none;
         padding: 0;
         transform: translateX(-100%);
         transition: transform 0.3s ease-in;
-        background-color: lightgray;
+        background-color: var(--superlight-grey);
     }
+    
     .container__list.active{
         transform: translateX(0);
     }
