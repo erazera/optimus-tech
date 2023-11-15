@@ -52,6 +52,13 @@
     
 }
 
+.error {
+    display: flex;
+    font-size: 12px;
+    margin-top: 1em;
+    
+}
+
 
 @media screen and (max-width: 768px) {
     .forms{
@@ -65,5 +72,12 @@
         margin-left: 1em;
     }
 
+    .error{
+        margin-top: 0;
+    }
+
+    .btn-primary{
+        margin-top: 0.5em;
+    }
     
 }
