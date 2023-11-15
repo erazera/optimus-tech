@@ -1,0 +1,10 @@
+.footer {
+    text-align: center;
+    background: var(--superlight-grey);
+    
+}
+
+.footer__text {
+    color: var(--light-grey);
+    padding: 1em;
+}
