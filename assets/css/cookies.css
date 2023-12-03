@@ -1,0 +1,66 @@
+.cookies__section {
+    position: fixed;
+    right: 5px;
+    bottom: 5%;
+    background: var(--red);
+    border-radius: 9px;
+    padding: 1em;
+}
+
+.cookies__popup {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0.2em;
+    color: var(--white);
+}
+
+.cookies__title {
+    margin-left: 0.5em;
+    font-size: 18px;
+}
+
+.cookies__text {
+    padding: 0.5em 0;
+}
+
+.cookies__read-more {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.cookies__read-more:hover {
+    color: var(--light-grey);
+}
+.button {
+    border: none;
+    background: var(--white);
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0.5em 0.7em;
+    margin-right: 1em;
+    color: var(--red);
+}
+
+.button:hover {
+    color: var(--light-grey);
+}
+
+@media screen and (max-width: 768px) {
+
+    .cookies__section {
+        padding: 0.8em;
+        left: 5px;
+        
+    }
+
+    .cookies__title {
+        font-size: 14px;
+    }
+
+    .cookies__text {
+        font-size: 13px;
+        text-align: left;
+
+    }
+}
