@@ -1,24 +1,20 @@
-function setCookie(cname, cvalue, exdays) {
+function setCookie(cName, cValue, expDays) {
     const d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    d.setTime(d.getTime() + (expDays*24*60*60*1000));
     let expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    document.cookie = cName + "=" + cValue + ";" + expires + ";path=/";
   }
 
-  function getCookie(cname) {
-    let name = cname + "=";
-    let decodedCookie = decodeURIComponent(document.cookie);
-    let ca = decodedCookie.split(';');
-    for(let i = 0; i <ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
+  getCookie = (cName) => {
+    const name = cName + "="
+    const cDecoded = decodeURIComponent(document.cookie);
+    const cArr = cDecoded.split("; ");
+    let value;
+    cArr.forEach(val => {
+      if(val.indexOf(name) === 0) value = val.substring(name.lenght);
+    })
+
+    return value;
   }
 
   var acceptBtn = document.getElementById('cookies-btn-yes');
@@ -38,3 +34,5 @@ function setCookie(cname, cvalue, exdays) {
         document.querySelector("#cookies").style.display = "block";
     }
   }
+
+  window.addEventListener("load", cookieMessage);

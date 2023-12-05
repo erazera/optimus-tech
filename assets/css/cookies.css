@@ -1,10 +1,11 @@
-.cookies__section {
+#cookies {
     position: fixed;
     right: 5px;
     bottom: 5%;
     background: var(--red);
     border-radius: 9px;
     padding: 1em;
+    display: none;
 }
 
 .cookies__popup {
@@ -64,3 +65,11 @@
 
     }
 }
+
+@media screen and (min-width: 769px) and (max-width: 928px) {
+    #cookies {
+      right: 30%;
+      
+    }
+  }
+
