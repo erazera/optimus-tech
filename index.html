@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OptimusTech</title>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,6 +77,21 @@
         </div>
     </section>   
 
+
+    <section id="cookies" class="cookies__section">
+        <div class="cookies__popup">
+            <i class="bx bx-cookie"></i>
+            <h3 class="cookies__title">Consentimento de Cookies</h3>
+        </div>
+        <div class="cookies__popup">
+            <p class="cookies__text">Nosso site utiliza cookies para melhorar o desempenho do site. <a class="cookies__read-more" href="#">Leia mais...</a></p>
+        </div>
+        <div class="cookies__popup">
+            <button id="cookies-btn-yes" class="button" id="acceptBtn">Aceitar</button>
+            <button id="cookies-btn-no" class="button" id="declineBtn">Recusar</button>
+        </div>
+    </section>
+
     <section>
         <div class="jobs">
             <span class="jobs__ad">Vagas abertas!</span>
@@ -123,7 +139,13 @@
                     <div class="form-group">
                         <input class="form-control mt-2" type="text" id="phoneInput" name="phone" placeholder="Celular">
                         <span class="error" id="phoneError"></span>
-                    </div>  
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" class="form-check-input" id="Check1">
+                        <label class="form-check-label" for="Check1">Ao se cadastrar você esta concordando com nossos <a class="Check1__terms" href="#">termos e condições
+                        </a></label>
+                        <span class="error" id="checkError"></span>
+                    </div>
                     <button type="submit" class="btn btn-primary">Cadastrar</button>
                 </div>
                 <small id="emailHelp" class="form-text text-muted">Não compartilharemos seus dados para ninguém.</small>
@@ -132,6 +154,7 @@
     </section>
 
     <script src="mobile-menu.js"></script> 
-    <script src="form-check.js"></script>   
+    <script src="form-check.js"></script> 
+    <script src="cookies.js"></script>  
 </body>
 </html>

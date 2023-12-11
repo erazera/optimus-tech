@@ -46,6 +46,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     clearErrorMessages();
     const name = document.querySelector('input[name="name"]').value;
     const email = document.querySelector('input[name="email"]').value;
+    const check = document.getElementById('Check1');
     if (!validatePhoneNumber()) {
         showErrorMessage("phone", "O número de telefone deve ter 11 dígitos, incluindo o DDD.");
         event.preventDefault();
@@ -56,6 +57,10 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     }
     if (email === '') {
         showErrorMessage("email", "Por favor, preencha o email.");
+        event.preventDefault();
+    }
+    if (!check.unchecked) {
+        showErrorMessage("check", "É necessário aceitar nosso termos para continuar.");
         event.preventDefault();
     }
 });
